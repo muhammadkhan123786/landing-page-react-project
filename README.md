@@ -3,4 +3,5 @@
 
 ### ✅ Project Progress
 - [x] Responsive Header for mobile and desktop completed
+- [x] Hero section (completed)
 

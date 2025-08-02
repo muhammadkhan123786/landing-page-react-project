@@ -1,5 +1,6 @@
 import HeroSection from './components/hero/HeroSection';
 import Navbar from './components/navbar/Navbar';
+import Partners from './components/partners/Partners';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="overflow-hidden">
         <Navbar />
         <HeroSection />
+        <Partners />
       </div>
     </main>
   );

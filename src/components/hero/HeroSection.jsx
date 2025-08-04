@@ -30,7 +30,7 @@ const HeroSection = () => {
             placeholder="Enter email address"
             className={hero.left.email_div.emailInput}
           />
-          <button className={header.button + ' rounded-xl'}>→</button>
+          <button className={header.button}>→</button>
         </div>
       </div>
       <div className={hero.right.main}>

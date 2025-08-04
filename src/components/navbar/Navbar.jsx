@@ -6,6 +6,8 @@ import { HiMenu, HiX } from 'react-icons/hi';
 const Navbar = () => {
   //for mobile menu toggle
   const [isOpen, setIsOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('#home');
+
   const mobileMenuHandler = () => {
     setIsOpen((pre) => {
       return !pre;
@@ -20,17 +22,18 @@ const Navbar = () => {
         </div>
         <div className={header.linkDiv}>
           {navBarLinks?.map((navbar) => (
-            <NavLink
-              className={({ isActive }) =>
-                isActive
+            <a
+              key={navbar.id}
+              href={navbar.href}
+              onClick={() => setActiveLink(navbar.href)}
+              className={
+                navbar.href === activeLink
                   ? `relative ${header.link} ${header.activeLink}`
                   : header.link
               }
-              key={navbar.id}
-              to={navbar.href}
             >
               {navbar.label}
-            </NavLink>
+            </a>
           ))}
         </div>
         <button className={`${header.button} hidden`}>Get in touch</button>

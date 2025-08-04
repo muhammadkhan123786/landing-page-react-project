@@ -17,7 +17,7 @@ export const header = {
   after:bg-blue-600 after:transition-all duration-300
   bg-red-400 text-white rounded`,
   button:
-    'md:block bg-blue-600 text-white px-6 py-2.5 rounded hover:bg-blue-700 transition-all duration-300 cursor-pointer text-sm font-medium shadow-lg hover:shadow-blue-300',
+    'md:block bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all duration-300 cursor-pointer text-sm font-medium shadow-lg hover:shadow-blue-300',
   mobileMenuDiv: 'md:hidden bg-white border-t border-gray-100 py-4 px-2',
   mobileMenuConatiner: 'container flex flex-col mx-auto space-y-2',
 };

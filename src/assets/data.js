@@ -1,15 +1,20 @@
 //   purpose section
 
+import { BiTime } from 'react-icons/bi';
+import { BsStack } from 'react-icons/bs';
+import { FiSettings } from 'react-icons/fi';
+import { HiLightBulb } from 'react-icons/hi';
+
 export const features = [
   {
     icon: '🟣', // Replace with your actual icon component or image
-    title: 'Built for impact',
+    title: 'Built for impact.',
     description:
-      'We identify and nurture a truly diverse team of designers, developers and marketers',
+      'We identify and nurture a truly diverse team of designers, developers and marketers.',
   },
   {
     icon: '🔴', // Replace with your actual icon component or image
-    title: 'In sync with you',
+    title: 'In sync with you.',
     description:
       'We work the way you do by adapting to your workflows and rhythm we aim to blend in for a seamless.',
   },
@@ -17,46 +22,52 @@ export const features = [
 
 //   features section
 
-const features = [
+export const other_features = [
   {
+    id: 1,
     icon: '🔍',
     title: 'Find out what you need',
     description: 'We present you a proposal and discuss nitty-gritty like',
+    icon_backgroundcolor: '#F1EFF0',
   },
   {
+    id: 2,
     icon: '⚙️',
     title: 'Work out the details',
     description: 'Communication protocols apart from engagement models',
+    icon_backgroundcolor: '#FEE7E7',
   },
   {
+    id: 3,
     icon: '🚀',
     title: 'We get to work fast',
     description: 'Protocols apart from engage models, pricing billing',
+    icon_backgroundcolor: '#FFF3E4',
   },
 ];
 
 //   services section
-const services = [
+export const services = [
   {
-    icon: <BsStack className="w-8 h-8 text-indigo-600" />,
+    icon: BsStack,
     title: 'Web Design',
     description: 'One for all and all for one, Muskehounds are always ready.',
     link: '#learn-more',
   },
   {
-    icon: <HiLightBulb className="w-8 h-8 text-amber-400" />,
+    icon: HiLightBulb,
     title: 'Ad-Creatives',
     description: 'Alphabet Village and the subline of her own road.',
     link: '#learn-more',
   },
   {
-    icon: <FiSettings className="w-8 h-8 text-red-400" />,
+    icon: FiSettings,
     title: 'Automation',
     description: 'Little Blind Text should turn around and return.',
     link: '#learn-more',
   },
   {
-    icon: <BiTime className="w-8 h-8 text-cyan-400" />,
+    icon: BiTime,
     title: 'Infographics',
     description: 'Nothing the copy said could convince her.',
     link: '#learn-more',
@@ -65,7 +76,7 @@ const services = [
 
 //   testimonials section
 
-const testimonials = [
+export const testimonials = [
   {
     id: 1,
     name: 'Robin Ayala Doe',
@@ -105,7 +116,7 @@ const testimonials = [
 ];
 
 // footer section
-const footerLinks = {
+export const footerLinks = {
   company: [
     { name: 'About', href: '#' },
     { name: 'Terms of Use', href: '#' },

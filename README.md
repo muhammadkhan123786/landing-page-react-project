@@ -5,5 +5,6 @@
 - [x] Responsive Header for mobile and desktop completed
 - [x] Hero section (completed)
 - [x] Responsive partners logos component with horizonatl animation mobile and desktop (completed)
+- [x] added About section and replaced NavLink with anchor links. 
  
 

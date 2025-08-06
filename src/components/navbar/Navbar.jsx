@@ -1,69 +1,18 @@
-import { NavLink } from 'react-router-dom';
-import { navBarLinks } from '../../db/navBarLinks';
-import { header } from './navbarStyles.js';
-import { useState } from 'react';
-import { HiMenu, HiX } from 'react-icons/hi';
+import DesktopNavbar from './DesktopNavbar.jsx';
+import MobileViewNavbar from './MobileViewNavbar.jsx';
+
 const Navbar = () => {
-  //for mobile menu toggle
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('#home');
-
-  const mobileMenuHandler = () => {
-    setIsOpen((pre) => {
-      return !pre;
-    });
-  };
   return (
-    <nav className={header.header}>
-      <div className={header.navbar}>
-        <div className={header.logo}>
-          <div className={header.logoDesign.blue} />
-          <div className={header.logoDesign.red} />
-        </div>
-        <div className={header.linkDiv}>
-          {navBarLinks?.map((navbar) => (
-            <a
-              key={navbar.id}
-              href={navbar.href}
-              onClick={() => setActiveLink(navbar.href)}
-              className={
-                navbar.href === activeLink
-                  ? `relative ${header.link} ${header.activeLink}`
-                  : header.link
-              }
-            >
-              {navbar.label}
-            </a>
-          ))}
-        </div>
-        <button className={`${header.button} hidden`}>Get in touch</button>
-        <button className="md:hidden" onClick={mobileMenuHandler}>
-          {isOpen ? <HiX className="size-6" /> : <HiMenu className="size-6" />}
-        </button>
-      </div>
-
-      {isOpen && (
-        <div className={header.mobileMenuDiv}>
-          <div className={header.mobileMenuConatiner}>
-            {navBarLinks?.map((navbar) => (
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? `relative ${header.link} ${header.activeLink}`
-                    : header.link
-                }
-                key={navbar.id}
-                to={navbar.href}
-                onClick={() => setIsOpen(false)}
-              >
-                {navbar.label}
-              </NavLink>
-            ))}
-            <button className={`${header.button} w-full`}>Get in touch</button>
-          </div>
-        </div>
-      )}
-    </nav>
+    <>
+      <nav
+        className={`fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm hidden md:block`}
+      >
+        <DesktopNavbar />
+      </nav>
+      <nav className={`fixed top-0 left-0 w-full bg-white shadow-md z-50`}>
+        <MobileViewNavbar />
+      </nav>
+    </>
   );
 };
 

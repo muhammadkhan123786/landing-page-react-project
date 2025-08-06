@@ -1,6 +1,8 @@
 export const navBarLinks = [
   { id: 1, href: '#home', label: 'Home' },
-  { id: 2, href: '#about', label: 'About Us' },
-  { id: 3, href: '#services', label: 'Our Services' },
-  { id: 4, href: '#testimonials', label: 'Testimonials' },
+  { id: 2, href: '#objectives', label: 'Our Objectives' },
+  { id: 3, href: '#about', label: 'About Us' },
+  { id: 4, href: '#why_we', label: 'Why we are' },
+  { id: 5, href: '#services', label: 'Our Services' },
+  { id: 6, href: '#testimonials', label: 'Testimonials' },
 ];

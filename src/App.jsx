@@ -1,24 +1,31 @@
+import About from './components/about/About';
 import Features from './components/features/Features';
 import HeroSection from './components/hero/HeroSection';
 import Navbar from './components/navbar/Navbar';
 import Objectives from './components/objectives/Objectives';
 import Partners from './components/partners/Partners';
+import Schedule from './components/schedule/Schedule';
 
 function App() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden">
-      <div className="absolute -top-28 -left-28 w-[500px] h-[500px] bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 rounded-full blur-[80px] -z-10"></div>
+    <main>
       <div className="overflow-hidden">
         <Navbar />
         <section id="home">
           <HeroSection />
           <Partners />
         </section>
-        <setion id="about">
+        <section id="objectives">
           <Objectives />
-        </setion>
+        </section>
+        <section id="why_we">
+          <Features />
+        </section>
+        <section id="services">
+          <Schedule />
+        </section>
         <section>
-          <Features id="services" />
+          <About />
         </section>
       </div>
     </main>

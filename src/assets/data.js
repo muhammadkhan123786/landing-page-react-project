@@ -7,12 +7,14 @@ import { HiLightBulb } from 'react-icons/hi';
 
 export const features = [
   {
+    id: 1,
     icon: '🟣', // Replace with your actual icon component or image
     title: 'Built for impact.',
     description:
       'We identify and nurture a truly diverse team of designers, developers and marketers.',
   },
   {
+    id: 2,
     icon: '🔴', // Replace with your actual icon component or image
     title: 'In sync with you.',
     description:

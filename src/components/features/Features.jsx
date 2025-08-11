@@ -1,6 +1,6 @@
 import { other_features } from '../../assets/data';
 import FeatureCard from './FeatureCard';
-import FeatureHead from './FeatureHead';
+import FeatureHead from '../UI/FeatureHead';
 
 import Section from '../UI/Section';
 import Button from '../UI/Button';
@@ -8,7 +8,10 @@ import Button from '../UI/Button';
 const Features = () => {
   return (
     <Section>
-      <FeatureHead />
+      <FeatureHead
+        heading={'How can we help your business?'}
+        message={'When you resell besnik, you build trust and increase.'}
+      />
       {/*list of features. */}
       <div className={`grid grid-cols-1 md:grid-cols-3 gap-8`}>
         {other_features.map((feature) => (

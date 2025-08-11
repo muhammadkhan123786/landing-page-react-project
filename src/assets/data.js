@@ -51,24 +51,28 @@ export const other_features = [
 //   services section
 export const services = [
   {
+    id: 1,
     icon: BsStack,
     title: 'Web Design',
     description: 'One for all and all for one, Muskehounds are always ready.',
     link: '#learn-more',
   },
   {
+    id: 2,
     icon: HiLightBulb,
     title: 'Ad-Creatives',
     description: 'Alphabet Village and the subline of her own road.',
     link: '#learn-more',
   },
   {
+    id: 3,
     icon: FiSettings,
     title: 'Automation',
     description: 'Little Blind Text should turn around and return.',
     link: '#learn-more',
   },
   {
+    id: 4,
     icon: BiTime,
     title: 'Infographics',
     description: 'Nothing the copy said could convince her.',
@@ -96,24 +100,6 @@ export const testimonials = [
     name: 'Rowhan Smith',
     image: 'https://randomuser.me/api/portraits/men/90.jpg',
     text: 'When she reached the first hills of the Mountains, she had a last view back on the of her hometown Bookmarksgrove, the headline.',
-  },
-  {
-    id: 4,
-    name: 'Sarah Johnson',
-    image: 'https://randomuser.me/api/portraits/women/45.jpg',
-    text: 'The customer service has been exceptional. They went above and beyond to help me solve my problems and were always available when I needed them.',
-  },
-  {
-    id: 5,
-    name: 'Michael Chen',
-    image: 'https://randomuser.me/api/portraits/men/32.jpg',
-    text: "I've been using their services for over a year now and couldn't be happier. The platform is intuitive and the features are exactly what I needed for my business.",
-  },
-  {
-    id: 6,
-    name: 'Emma Wilson',
-    image: 'https://randomuser.me/api/portraits/women/28.jpg',
-    text: "What impressed me most was how quickly they responded to my requests. The team is professional, knowledgeable, and truly cares about their customers' success.",
   },
 ];
 

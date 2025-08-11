@@ -5,6 +5,9 @@ import Navbar from './components/navbar/Navbar';
 import Objectives from './components/objectives/Objectives';
 import Partners from './components/partners/Partners';
 import Schedule from './components/schedule/Schedule';
+import Pricing from './components/pricing/Pricing';
+import Services from './components/services/Services';
+import Testimonials from './components/testinomials/Testimonials';
 
 function App() {
   return (
@@ -26,6 +29,15 @@ function App() {
         </section>
         <section>
           <About />
+        </section>
+        <section>
+          <Pricing />
+        </section>
+        <section>
+          <Services />
+        </section>
+        <section>
+          <Testimonials />
         </section>
       </div>
     </main>

@@ -8,12 +8,12 @@ const HeroSection = () => {
     <Container>
       <LeftComponent />
 
-      <Section position={`right`}>
-        <div className={`relative`}>
+      <Section position="right">
+        <div className="relative">
           <img
             src={heroimage}
             alt="hero section image"
-            className={`rounded:lg relative z-10 hover:scale-[1.02] transition-transform duration-300`}
+            className="rounded:lg relative z-10 hover:scale-[1.02] transition-transform duration-300"
           />
         </div>
       </Section>

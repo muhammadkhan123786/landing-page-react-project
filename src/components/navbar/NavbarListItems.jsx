@@ -5,7 +5,7 @@ const NavbarListItems = () => {
   const [activeLink, setActiveLink] = useState('#home');
 
   return (
-    <div className={`hidden md:flex items-center gap-10`}>
+    <div className="hidden md:flex items-center gap-10">
       {navBarLinks?.map((navbar) => (
         <NavLinkItem
           key={navbar.id}

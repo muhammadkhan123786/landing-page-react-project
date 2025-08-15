@@ -11,3 +11,21 @@
     transform: translateX(-50%);
   }
 }
+
+.mySwiper {
+  padding: 20px 0;
+}
+.mySwiper .SwiperSlide {
+  height: auto;
+}
+
+.mySwiper .swiper-pre-button::after,
+.mySwiper .swiper-next-button::after {
+  display: none;
+}
+
+.swiper-pre-button.swiper-button-disabled,
+.swiper-next-button.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

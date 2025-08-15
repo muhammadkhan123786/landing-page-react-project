@@ -15,10 +15,10 @@ const About = () => {
   return (
     <Section>
       <Container>
-        <div className={`w-full md:w-1/2`}>
+        <div className="w-full md:w-1/2">
           <Card cardData={cardData} />
         </div>
-        <div className={`w-full md:w-1/2`}>
+        <div className="w-full md:w-1/2">
           <img src={monitorcard} alt="stats" />
         </div>
       </Container>

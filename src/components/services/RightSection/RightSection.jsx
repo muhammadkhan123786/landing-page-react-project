@@ -4,11 +4,8 @@ import GridCard from './GridCard';
 const RightSection = () => {
   return (
     <>
-      <div
-        className={`w-full md:w-2/3
-            `}
-      >
-        <div className={`grid grid-col-1 md:grid-cols-2 gap-8`}>
+      <div className="w-full md:w-2/3">
+        <div className="grid grid-col-1 md:grid-cols-2 gap-8">
           {services.map((service) => (
             <GridCard key={service.id} service={service} />
           ))}

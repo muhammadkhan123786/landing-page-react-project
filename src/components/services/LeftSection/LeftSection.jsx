@@ -6,12 +6,12 @@ const LeftSection = () => {
   return (
     <>
       <div
-        className={`w-full md:w-1/3
-            `}
+        className="w-full md:w-1/3
+            "
       >
         <Heading />
         <GoalListing />
-        <div className={`pt-8`}>
+        <div className="pt-8">
           <Button>Get Started</Button>
         </div>
       </div>

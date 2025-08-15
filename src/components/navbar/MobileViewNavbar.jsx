@@ -16,14 +16,10 @@ const MobileViewNavbar = () => {
   };
   return (
     <>
-      <div className={`md:hidden px-2 py-2 flex justify-between`}>
+      <div className="md:hidden px-2 py-2 flex justify-between">
         <Logo />
-        <button className={`md:hidden`} onClick={mobileMenuHandler}>
-          {isOpen ? (
-            <HiX className={`size-6`} />
-          ) : (
-            <HiMenu className={`size-6`} />
-          )}
+        <button className="md:hidden" onClick={mobileMenuHandler}>
+          {isOpen ? <HiX className="size-6" /> : <HiMenu className="size-6" />}
         </button>
       </div>
       {isOpen && (
@@ -40,9 +36,7 @@ const MobileViewNavbar = () => {
             />
           ))}
 
-          <button
-            className={`bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all duration-300 cursor-pointer text-sm font-medium shadow-lg hover:shadow-blue-300 mb-2`}
-          >
+          <button className="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all duration-300 cursor-pointer text-sm font-medium shadow-lg hover:shadow-blue-300 mb-2">
             Get in touch
           </button>
         </MobileSection>

@@ -13,11 +13,11 @@ const ScheduleComponent = () => {
   };
   return (
     <Container>
-      <div className={`w-full md:w-1/2`}>
-        <img src={stats} alt="stats" className={`w-full h-auto`} />
+      <div className="w-full md:w-1/2">
+        <img src={stats} alt="stats" className="w-full h-auto" />
       </div>
 
-      <div className={`w-full md:w-1/2`}>
+      <div className="w-full md:w-1/2">
         <Card cardData={cardData} />
       </div>
     </Container>

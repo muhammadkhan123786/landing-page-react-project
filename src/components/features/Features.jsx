@@ -13,12 +13,12 @@ const Features = () => {
         message={'When you resell besnik, you build trust and increase.'}
       />
       {/*list of features. */}
-      <div className={`grid grid-cols-1 md:grid-cols-3 gap-8`}>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {other_features.map((feature) => (
           <FeatureCard key={feature.id} feature={feature} />
         ))}
       </div>
-      <div className={`justify-center items-center flex mt-16`}>
+      <div className="justify-center items-center flex mt-16">
         <Button>Become a partner</Button>
       </div>
     </Section>

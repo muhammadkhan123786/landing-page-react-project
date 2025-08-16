@@ -2,10 +2,11 @@ const Heading = () => {
   return (
     <>
       <h1 className="text-3xl font-bold mb-4">
-        Future of support with new shape
+        The New Shape of Business Support
       </h1>
       <p className="text-gray-600 mb-4">
-        Discuss your goals, determine success metrics, identify problems.
+        We provide modern digital solutions to help your business grow, connect
+        with the right audience, and stay ahead of the competition.
       </p>
     </>
   );

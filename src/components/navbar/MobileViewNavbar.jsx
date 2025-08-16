@@ -4,10 +4,20 @@ import { navBarLinks } from '../../db/navBarLinks';
 import { HiMenu, HiX } from 'react-icons/hi';
 import NavLinkItem from './NavLinkItem';
 import Logo from './Logo.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const MobileViewNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('#home');
+  const navigate = useNavigate();
+  const handleClick = () => {
+    mobileMenuHandler();
+    const section = document.getElementById('newsletter');
+    if (section) {
+      navigate('/#newsletter');
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   const mobileMenuHandler = () => {
     setIsOpen((pre) => {
@@ -36,7 +46,10 @@ const MobileViewNavbar = () => {
             />
           ))}
 
-          <button className="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all duration-300 cursor-pointer text-sm font-medium shadow-lg hover:shadow-blue-300 mb-2">
+          <button
+            className="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all duration-300 cursor-pointer text-sm font-medium shadow-lg hover:shadow-blue-300 mb-2"
+            onClick={handleClick}
+          >
             Get in touch
           </button>
         </MobileSection>

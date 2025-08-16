@@ -1,15 +1,17 @@
-import About from './components/about/About';
-import Features from './components/features/Features';
 import HeroSection from './components/hero/HeroSection';
 import Navbar from './components/navbar/Navbar';
 import Objectives from './components/objectives/Objectives';
 import Partners from './components/partners/Partners';
-import Schedule from './components/schedule/Schedule';
+
 import Pricing from './components/pricing/Pricing';
-import Services from './components/services/Services';
+
 import Testimonials from './components/testinomials/Testimonials';
 import NewsLetter from './components/newsLetter/NewsLetter';
 import Footer from './components/footer/Footer';
+import AboutUs from './components/about/AboutUs';
+import WhyWeAre from './components/why-we-are/why-we-are';
+import Services from './components/services/Services';
+import DigitalServices from './components/digital-services/Digital-Services';
 
 function App() {
   return (
@@ -18,30 +20,33 @@ function App() {
         <Navbar />
         <section id="home">
           <HeroSection />
+        </section>
+        <section>
           <Partners />
         </section>
         <section id="objectives">
           <Objectives />
         </section>
+        <section id="about">
+          <AboutUs />
+        </section>
         <section id="why_we">
-          <Features />
+          <WhyWeAre />
         </section>
         <section id="services">
-          <Schedule />
-        </section>
-        <section>
-          <About />
-        </section>
-        <section>
-          <Pricing />
-        </section>
-        <section>
           <Services />
         </section>
-        <section>
+        <section id="digital-services">
+          <DigitalServices />
+        </section>
+        <section id="pricing">
+          <Pricing />
+        </section>
+
+        <section id="testimonials">
           <Testimonials />
         </section>
-        <section>
+        <section id="newsletter">
           <NewsLetter />
         </section>
         <section>

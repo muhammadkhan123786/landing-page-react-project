@@ -3,6 +3,12 @@ import GoalListing from './GoalListing';
 import Heading from './Heading';
 
 const LeftSection = () => {
+  const handleNavigate = () => {
+    const section = document.getElementById('newsletter');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <div
@@ -11,7 +17,7 @@ const LeftSection = () => {
       >
         <Heading />
         <GoalListing />
-        <div className="pt-8">
+        <div className="pt-8" onClick={handleNavigate}>
           <Button>Get Started</Button>
         </div>
       </div>

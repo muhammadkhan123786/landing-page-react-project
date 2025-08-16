@@ -13,7 +13,6 @@ const Footer = () => {
           <div className="md:w-1/4 w-full">
             <div className="flex gap-2">
               <Logo />
-              <h2 className="font-bold">The Next Design</h2>
             </div>
             <div className="mt-4">
               <p>

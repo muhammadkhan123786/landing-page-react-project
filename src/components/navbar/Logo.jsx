@@ -1,11 +1,26 @@
-const logo = 'w-4 h-4 rounded-full transition-opacity';
+import { useNavigate } from 'react-router-dom';
+
 const Logo = () => {
+  const navigate = useNavigate();
+  const handleLogoClick = () => {
+    const section = document.getElementById('home');
+    if (section) {
+      navigate('/#home');
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
-    <div className="flex items-center gap-1 cursor-pointer">
-      <div className={logo + ' bg-blue-600 opacity-70 hover:opacity-100'}></div>
-      <div
-        className={logo + ' bg-red-500 -ml-2 opacity-100 hover:opacity-70'}
-      ></div>
+    <div
+      className="flex items-center gap-1 cursor-pointer"
+      onClick={handleLogoClick}
+    >
+      <div>
+        <div className="flex">
+          <h1 className="text-blue-600 font-bold">Ubiz — </h1>
+          <h1 className="pl-2 text-red-500 font-bold">Bay</h1>
+        </div>
+        <p className="text-amber-600 text-2xl">Universal Business Bay</p>
+      </div>
     </div>
   );
 };

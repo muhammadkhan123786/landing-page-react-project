@@ -17,3 +17,4 @@ landing page built with React 19, Tailwind CSS v4, and Framer Motion animations.
 
 - Designed and styled responsive testimonial cards
 - Refactored TailwindCSS usage from template literals to standard className attributes for cleaner code"
+  [x] Responsive News letter & Footer section design for mobile and desktop completed.

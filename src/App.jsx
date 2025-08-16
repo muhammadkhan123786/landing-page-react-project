@@ -8,6 +8,8 @@ import Schedule from './components/schedule/Schedule';
 import Pricing from './components/pricing/Pricing';
 import Services from './components/services/Services';
 import Testimonials from './components/testinomials/Testimonials';
+import NewsLetter from './components/newsLetter/NewsLetter';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -38,6 +40,12 @@ function App() {
         </section>
         <section>
           <Testimonials />
+        </section>
+        <section>
+          <NewsLetter />
+        </section>
+        <section>
+          <Footer />
         </section>
       </div>
     </main>

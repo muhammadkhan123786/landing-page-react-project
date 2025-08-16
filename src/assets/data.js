@@ -129,25 +129,25 @@ export const testimonials = [
 
 // footer section
 export const footerLinks = {
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Terms of Use', href: '#' },
-    { name: 'Privacy Policy', href: '#' },
-    { name: 'How it Works', href: '#' },
-    { name: 'Contact Us', href: '#' },
+  Company: [
+    { id: 1, name: 'About', href: '#' },
+    { id: 2, name: 'Terms of Use', href: '#' },
+    { id: 3, name: 'Privacy Policy', href: '#' },
+    { id: 4, name: 'How it Works', href: '#' },
+    { id: 5, name: 'Contact Us', href: '#' },
   ],
-  getHelp: [
-    { name: 'Support Carrer', href: '#' },
-    { name: '24h Service', href: '#' },
-    { name: 'Quick Chat', href: '#' },
+  'Get Help': [
+    { id: 6, name: 'Support Carrer', href: '#' },
+    { id: 7, name: '24h Service', href: '#' },
+    { id: 8, name: 'Quick Chat', href: '#' },
   ],
-  support: [
-    { name: 'FAQ', href: '#' },
-    { name: 'Policy', href: '#' },
-    { name: 'Business', href: '#' },
+  Support: [
+    { id: 9, name: 'FAQ', href: '#' },
+    { id: 10, name: 'Policy', href: '#' },
+    { id: 11, name: 'Business', href: '#' },
   ],
-  contact: [
-    { name: 'WhatsApp', href: '#' },
-    { name: 'Support 24', href: '#' },
+  Contact: [
+    { id: 12, name: 'WhatsApp', href: '#' },
+    { id: 13, name: 'Support 24', href: '#' },
   ],
 };

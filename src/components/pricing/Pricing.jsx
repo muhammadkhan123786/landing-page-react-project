@@ -9,7 +9,7 @@ const Pricing = () => {
   return (
     <Section>
       <h1 className="text-center text-3xl font-bold">Pricing</h1>
-      <div className="w-full flex gap-8 mt-8">
+      <div className="w-full flex md:flex-row gap-8 mt-8 flex-col">
         <PricingCard packageType={'Starter'} Price={startPrice} />
         <PricingCard packageType={'Business'} Price={businessPrice} />
       </div>
